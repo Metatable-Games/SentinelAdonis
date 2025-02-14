@@ -18,7 +18,8 @@ return function()
 		return
 	end
 	
-	local API = require(SDK)
+	local API = require(SDK:WaitForChild("SentinelAPI"))
+
 	server.Commands.sunban = {
 		Prefix = server.Settings.Prefix;
 		Commands = {"sunban"};
